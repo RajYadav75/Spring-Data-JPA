@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "emp_tbl")
@@ -20,5 +21,10 @@ public class Employee {
     private Double empSalary;
     private String empGender;
     private String dept;
+
+    private LocalDate dateCreated;
+    private LocalDate lastUpdated;
+
+
 
 }
